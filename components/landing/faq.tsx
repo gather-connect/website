@@ -26,7 +26,7 @@ const Faq = () => {
     ]
 
     return (
-        <section className='py-32'>
+        <section className='py-28'>
             <div className='container'>
                 <h1 className='mb-4 text-3xl font-semibold md:mb-11 md:text-5xl'>
                     Frequently asked questions

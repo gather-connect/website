@@ -77,9 +77,11 @@ const Navbar = () => {
                         <Link href="/auth">
                             <Button variant={'outline'}>Log in</Button>
                         </Link>
-                        <Button className='bg-[#6495ED]'>
-                            Get the app
-                        </Button>
+                        <Link href="/get_app">
+                            <Button className='bg-[#6495ED]'>
+                                Get the app
+                            </Button>
+                        </Link>
                     </div>
                 </nav>
           </div>

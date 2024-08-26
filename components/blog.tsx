@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const posts = [
     {
@@ -53,10 +54,12 @@ const Blog = () => {
                         Elig doloremque mollitia fugiat omnis! Porro facilis quo
                         animi consequatur. Explicabo.
                     </p>
-                    <Button variant='link' className='w-full sm:w-auto'>
-                        Explore all posts
-                        <ArrowRight className='ml-2 size-4' />
-                    </Button>
+                    <Link href="/blog">
+                        <Button variant='link' className='w-full sm:w-auto'>
+                            Explore all posts
+                            <ArrowRight className='ml-2 size-4' />
+                        </Button>
+                    </Link>      
                 </div>
                 <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
                     {posts.map((post) => (

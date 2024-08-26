@@ -1,6 +1,7 @@
 import Features from "@/components/about/features";
 import Team from "@/components/about/team";
 import Testimonial from "@/components/about/testimonial";
+import Faq from "@/components/landing/faq";
 
 export default function About() {
     return (
@@ -8,6 +9,7 @@ export default function About() {
         <Testimonial />
         <Features />
         <Team />
+        <Faq />
       </main>
     );
 }

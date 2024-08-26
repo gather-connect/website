@@ -1,5 +1,6 @@
 import { Avatar, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const Testimonial = () => {
     return (
@@ -32,9 +33,11 @@ const Testimonial = () => {
                             events. Hassle-free.
                         </p>
                     </div>
-                    <Button size={'lg'} className='mt-10'>
-                        Get started for free
-                    </Button>
+                    <Link href="/get_app">
+                        <Button size={'lg'} className='mt-10'>
+                            Get started for free
+                        </Button>
+                    </Link>                  
                 </div>
             </div>
         </section>

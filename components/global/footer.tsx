@@ -11,17 +11,17 @@ const sections = [
     {
         title: 'Product',
         links: [
-            { name: 'Overview', href: '#' },
+            { name: 'Overview', href: '/' },
             { name: 'Features', href: '#' },
-            { name: 'Changelog', href: '#' },
-            { name: 'Roadmap', href: '#' }
+            { name: 'Changelog', href: '/changelog' },
+            { name: 'Roadmap', href: '/changelog' }
         ],
     },
     {
         title: 'Company',
         links: [
-            { name: 'About', href: '#' },
-            { name: 'Blog', href: '#' },
+            { name: 'About', href: '/about' },
+            { name: 'Blog', href: '/blog' },
             { name: 'Contact', href: '#' },
             { name: 'Privacy', href: '#' },
         ],

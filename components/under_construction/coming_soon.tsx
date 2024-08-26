@@ -22,7 +22,7 @@ const ComingSoon = () => {
                     Under construction.
                 </h1>
                 <p className='max-w-2xl text-muted-foreground md:text-[2vw] lg:text-xl'>
-                    We're hard at work building this platform. Please check out our changelog and roadmap in the meantime.
+                    We're hard at work building this stuff. Please check out our changelog and roadmap in the meantime.
                 </p>
                 <div className='mt-6 flex flex-col gap-4 sm:flex-row lg:mt-10'>
                     <Link href="/changelog">
