@@ -5,6 +5,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navbar = () => {
   return (
@@ -13,9 +14,10 @@ const Navbar = () => {
                 <nav className='hidden justify-between lg:flex'>
                   <div className='flex items-center gap-4'>
                         <div className='flex items-center gap-2'>
-                            <img
+                            <Image
                                 src='../../images/header_logo.svg'
-                                className='w-8'
+                                width={32}
+                                height={32}
                                 alt='logo'
                             />
                             <span className='text-xl font-bold'>
@@ -73,7 +75,7 @@ const Navbar = () => {
                             </a>
                         </div>
                   </div>
-                    <div className='flex gap-2'>
+                    <div className="flex gap-2">
                         <Link href="/auth">
                             <Button variant={'outline'}>Log in</Button>
                         </Link>

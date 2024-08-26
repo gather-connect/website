@@ -9,17 +9,13 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Globe, UserRound } from 'lucide-react'
+import Image from 'next/image'
 
 const SignUp = () => {
     return (
         <section className='py-32'>
             <div className='container'>
                 <div className='flex flex-col gap-4'>
-                    <img
-                        src='https://www.shadcnblocks.com/images/block/logos/shadcn-ui.svg'
-                        alt='logo'
-                        className='h-8'
-                    />
                     <Card className='mx-auto w-full max-w-md'>
                         <CardHeader className='items-center'>
                             <UserRound className='size-10 rounded-full bg-accent p-2.5 text-muted-foreground' />
