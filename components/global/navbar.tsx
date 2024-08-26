@@ -11,7 +11,7 @@ const Navbar = () => {
       <section className='py-4'>
             <div className='container'>
                 <nav className='hidden justify-between lg:flex'>
-                  <div className='flex items-center gap-6'>
+                  <div className='flex items-center gap-4'>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='../../images/header_logo.svg'
@@ -29,9 +29,9 @@ const Navbar = () => {
                                     navigationMenuTriggerStyle,
                                     buttonVariants({
                                         variant: 'ghost',
-                                    })
+                                    }),
                                 )}
-                                href='#'
+                                href='/'
                             >
                                 Overview
                             </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
                                         variant: 'ghost',
                                     })
                                 )}
-                                href='#'
+                                href="/api"
                             >
                                 API
                             </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
                                         variant: 'ghost',
                                     })
                                 )}
-                                href='/about'
+                                href="/about"
                             >
                                 About
                             </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
                                         variant: 'ghost',
                                     })
                                 )}
-                                href='#'
+                                href="/blog"
                             >
                                 Blog
                             </a>

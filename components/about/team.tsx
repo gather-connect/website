@@ -3,51 +3,27 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 const people = [
     {
         id: 'person-1',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-1.webp',
+        name: 'Aryan',
+        role: 'CEO',
+        avatar: '../../images/team/aryan.svg',
     },
     {
         id: 'person-2',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-2.webp',
+        name: 'Solomon',
+        role: 'CTO',
+        avatar: '../../images/team/solomon.svg',
     },
     {
         id: 'person-3',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-3.webp',
+        name: 'Barakha',
+        role: 'CFO',
+        avatar: '../../images/team/barahka.svg',
     },
     {
         id: 'person-4',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-4.webp',
-    },
-    {
-        id: 'person-5',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-5.webp',
-    },
-    {
-        id: 'person-6',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-6.webp',
-    },
-    {
-        id: 'person-7',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-7.webp',
-    },
-    {
-        id: 'person-8',
-        name: 'Name',
-        role: 'Role',
-        avatar: '/images/block/avatar-8.webp',
+        name: 'Enkang',
+        role: 'Engineer',
+        avatar: '../../images/team/enkang.svg',
     },
 ]
 
@@ -55,7 +31,6 @@ const Team = () => {
     return (
         <section className='py-32'>
             <div className='container flex flex-col items-center text-center'>
-                <p className='semibold'>We&apos;re hiring</p>
                 <h2 className='my-6 text-pretty text-2xl font-bold lg:text-4xl'>
                     Meet our team
                 </h2>

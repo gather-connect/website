@@ -18,7 +18,7 @@ const data = [
         summary:
             'Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../../images/blog/blues.jpg',
     },
     {
         id: 'item-2',
@@ -26,7 +26,7 @@ const data = [
         summary:
             'Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../../images/blog/titanium.jpg',
     },
     {
         id: 'item-3',
@@ -34,7 +34,7 @@ const data = [
         summary:
             'Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../../images/blog/solarized.jpg',
     },
     {
         id: 'item-4',
@@ -42,7 +42,7 @@ const data = [
         summary:
             'Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../../images/blog/pearlescent.jpg',
     },
     {
         id: 'item-5',
@@ -50,7 +50,7 @@ const data = [
         summary:
             'Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../../images/blog/pearly.jpg',
     },
 ]
 
@@ -83,13 +83,6 @@ const Gallery = () => {
                         <h2 className='mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6'>
                             Gallery
                         </h2>
-                        <a
-                            href='#'
-                            className='group flex items-center text-xs font-medium md:text-base lg:text-lg'
-                        >
-                            Book a demo{' '}
-                            <ArrowRight className='ml-2 size-4 transition-transform group-hover:translate-x-1' />
-                        </a>
                     </div>
                     <div className='mt-8 flex shrink-0 items-center justify-center gap-2'>
                         <Button

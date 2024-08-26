@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button'
 
 const Testimonial = () => {
     return (
-        <section className='py-32'>
+        <section className='py-36'>
             <div className='container'>
                 <div className='text-center'>
                     <div className='text-3xl font-bold md:text-5xl lg:text-7xl'>
                         <p className='flex flex-wrap items-center justify-center'>
-                            Begin hiring
+                            Ticket your
                             <span className='mx-4 inline-flex items-center -space-x-4'>
                                 <Avatar className='size-11 border lg:size-16'>
                                     <AvatarImage
@@ -29,7 +29,7 @@ const Testimonial = () => {
                                     />
                                 </Avatar>
                             </span>
-                            quickly. At no cost at all.
+                            events. Hassle-free.
                         </p>
                     </div>
                     <Button size={'lg'} className='mt-10'>

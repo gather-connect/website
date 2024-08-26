@@ -11,7 +11,7 @@ const posts = [
         author: 'Jane Doe',
         published: '1 Jan 2024',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../images/blog/blues.jpg',
     },
     {
         id: 'post-2',
@@ -22,7 +22,7 @@ const posts = [
         author: 'Jane Doe',
         published: '1 Jan 2024',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../images/blog/pearly.jpg',
     },
     {
         id: 'post-3',
@@ -33,7 +33,7 @@ const posts = [
         author: 'Jane Doe',
         published: '1 Jan 2024',
         href: '#',
-        image: '/images/block/placeholder-dark-1.svg',
+        image: '../images/blog/pearlescent.jpg',
     },
 ]
 

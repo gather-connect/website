@@ -3,19 +3,15 @@ import {
     FaApple,
     FaGooglePlay,
     FaInstagram,
-    FaRedditAlien,
-    FaTelegramPlane,
     FaTiktok,
     FaTwitter,
 } from 'react-icons/fa'
-import { RiTailwindCssFill } from 'react-icons/ri'
 
 const sections = [
     {
         title: 'Product',
         links: [
             { name: 'Overview', href: '#' },
-            { name: 'Pricing', href: '#' },
             { name: 'Features', href: '#' },
             { name: 'Changelog', href: '#' },
             { name: 'Roadmap', href: '#' }
@@ -52,13 +48,13 @@ const Footer = () => {
                             </p>
                             <div className='flex gap-2'>
                                 <a
-                                    href='#'
+                                    href='https://play.google.com/store/apps/details?id=com.GatherConnect.Gather&hl=en_US&pli=1'
                                     className='inline-flex rounded-lg bg-primary p-2.5 justify-center items-center'
                                 >
                                     <FaGooglePlay className='size-7 text-background' />
                                 </a>
                                 <a
-                                    href='#'
+                                    href='https://apps.apple.com/us/app/gather-discover-campus-events/id6471381908'
                                     className='inline-flex rounded-lg bg-primary p-2.5 justify-center items-center'
                                 >
                                     <FaApple className='size-7 text-background' />
@@ -67,7 +63,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <Separator className='my-14' />
+                    <Separator className='my-16' />
                     <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
                         {sections.map((section, sectionIdx) => (
                             <div key={sectionIdx}>
