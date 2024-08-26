@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@openstatus/react": "^0.0.3",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -22,11 +24,14 @@
     "embla-carousel-react": "^8.2.0",
     "lucide-react": "^0.435.0",
     "next": "14.2.6",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
     "react-icons": "^5.3.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "typescript": "^5",

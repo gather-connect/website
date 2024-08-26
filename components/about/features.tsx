@@ -6,7 +6,7 @@ const Features = () => {
             <div className='container'>
                 <p className='mb-4 text-xs text-muted-foreground'>Why Us?</p>
                 <h2 className='text-3xl font-medium lg:text-4xl'>
-                    A better way to build websites
+                    A better way to ticket events
                 </h2>
                 <div className='mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-4'>
                     <div className='relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5'>

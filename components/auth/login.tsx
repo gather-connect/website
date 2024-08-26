@@ -1,92 +1,52 @@
-import { Button } from '@/components/ui/button'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Globe, UserRound } from 'lucide-react'
+import { Metadata } from 'next';
+import Link from 'next/link';
+import UserAuthForm from '@/components/forms/user-auth-form';
 
-const Login = () => {
-    return (
-        <section className='py-32'>
-            <div className='container'>
-                <div className='flex flex-col gap-4'>
-                    <img
-                        src='https://www.shadcnblocks.com/images/block/logos/shadcn-ui.svg'
-                        alt='logo'
-                        className='h-8'
-                    />
-                    <Card className='mx-auto w-full max-w-md'>
-                        <CardHeader className='items-center'>
-                            <UserRound className='size-10 rounded-full bg-accent p-2.5 text-muted-foreground' />
-                            <CardTitle className='text-xl'>
-                                Log in with your email
-                            </CardTitle>
-                            <CardDescription>
-                                Enter your information to login
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className='grid gap-4'>
-                                <Button variant='outline' className='w-full'>
-                                    <Globe className='mr-2 size-4' />
-                                    Sign up with Google
-                                </Button>
-                                <div className='flex items-center gap-4'>
-                                    <span className='h-px w-full bg-input'></span>
-                                    <span className='text-xs text-muted-foreground'>
-                                        OR
-                                    </span>
-                                    <span className='h-px w-full bg-input'></span>
-                                </div>
-                                <div className='grid gap-2'>
-                                    <Label htmlFor='email'>Email</Label>
-                                    <Input
-                                        id='email'
-                                        type='email'
-                                        placeholder='m@example.com'
-                                        required
-                                    />
-                                </div>
-                                <div className='grid gap-2'>
-                                    <div className='flex justify-between'>
-                                        <Label htmlFor='password'>
-                                            Password
-                                        </Label>
-                                        <a
-                                            href='#'
-                                            className='text-sm underline'
-                                        >
-                                            Forgot password
-                                        </a>
-                                    </div>
-                                    <Input
-                                        id='password'
-                                        type='password'
-                                        placeholder='Enter your password'
-                                        required
-                                    />
-                                </div>
-                                <Button type='submit' className='w-full'>
-                                    Log in
-                                </Button>
-                            </div>
-                        </CardContent>
-                    </Card>
-                    <div className='mx-auto flex gap-1 text-sm'>
-                        <p>Don&apos;t have an account yet?</p>
-                        <a href='#' className='underline'>
-                            Log in
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
+export const metadata: Metadata = {
+  title: 'Authentication',
+  description: 'Authentication forms built using the components.'
+};
+
+export default function Login() {
+  return (
+    <div className="relative h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+      <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
+        <div className="absolute inset-0 bg-zinc-900" />
+        <div className="relative z-20 flex items-center text-lg font-medium gap-2">
+            <img src='../../../images/header_logo.svg' className='w-8' alt='logo'/>
+            Gather
+        </div>
+      </div>
+      <div className="flex h-full items-center p-4 lg:p-8">
+        <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+          <div className="flex flex-col space-y-2 text-center">
+            <h1 className="text-2xl font-semibold tracking-tight">
+              Create an account
+            </h1>
+            <p className="text-sm text-muted-foreground">
+              Enter your email below to create your account
+            </p>
+          </div>
+          <UserAuthForm />
+          <p className="px-8 text-center text-sm text-muted-foreground">
+            By clicking continue, you agree to our{' '}
+            <Link
+              href="/terms"
+              className="underline underline-offset-4 hover:text-primary"
+            >
+              Terms of Service
+            </Link>{' '}
+            and{' '}
+            <Link
+              href="/privacy"
+              className="underline underline-offset-4 hover:text-primary"
+            >
+              Privacy Policy
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-export default Login

@@ -1,12 +1,11 @@
 import { Separator } from '@/components/ui/separator'
 import {
     FaApple,
-    FaDiscord,
     FaGooglePlay,
-    FaPlay,
-    FaReact,
+    FaInstagram,
     FaRedditAlien,
     FaTelegramPlane,
+    FaTiktok,
     FaTwitter,
 } from 'react-icons/fa'
 import { RiTailwindCssFill } from 'react-icons/ri'
@@ -17,19 +16,16 @@ const sections = [
         links: [
             { name: 'Overview', href: '#' },
             { name: 'Pricing', href: '#' },
-            { name: 'Marketplace', href: '#' },
             { name: 'Features', href: '#' },
-            { name: 'Integrations', href: '#' },
-            { name: 'Pricing', href: '#' },
+            { name: 'Changelog', href: '#' },
+            { name: 'Roadmap', href: '#' }
         ],
     },
     {
         title: 'Company',
         links: [
             { name: 'About', href: '#' },
-            { name: 'Team', href: '#' },
             { name: 'Blog', href: '#' },
-            { name: 'Careers', href: '#' },
             { name: 'Contact', href: '#' },
             { name: 'Privacy', href: '#' },
         ],
@@ -46,32 +42,28 @@ const sections = [
 
 const Footer = () => {
     return (
-        <section className='py-32'>
+        <section className='py-4'>
             <div className='container'>
                 <footer>
                     <div className='flex flex-col justify-between gap-4 md:flex-row md:items-center'>
-                        <img
-                            src='https://www.shadcnblocks.com/images/block/logos/shadcn-ui.svg'
-                            alt='logo'
-                            className='mb-8 mr-auto h-7 md:mb-0'
-                        />
                         <div className='flex flex-col gap-4 md:flex-row md:items-center'>
                             <p className='text-lg font-medium'>
-                                Copy the code and make it yours.
+                                Get on Android or iOS today.
                             </p>
                             <div className='flex gap-2'>
                                 <a
                                     href='#'
                                     className='inline-flex rounded-lg bg-primary p-2.5 justify-center items-center'
                                 >
-                                    <FaApple className='size-7 text-background' />
+                                    <FaGooglePlay className='size-7 text-background' />
                                 </a>
                                 <a
                                     href='#'
                                     className='inline-flex rounded-lg bg-primary p-2.5 justify-center items-center'
                                 >
-                                    <img src="images/icons/google-play-icon.svg" className='size-6 text-background' alt="google play"/>
+                                    <FaApple className='size-7 text-background' />
                                 </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -108,12 +100,12 @@ const Footer = () => {
                             <ul className='flex space-x-6 text-muted-foreground items-center'>
                                 <li className='font-medium hover:text-primary'>
                                     <a href='#'>
-                                        <FaDiscord className='size-6' />
+                                        <FaInstagram className='size-6' />
                                     </a>
                                 </li>
                                 <li className='font-medium hover:text-primary'>
                                     <a href='#'>
-                                        <FaRedditAlien className='size-6' />
+                                        <FaTiktok className='size-6' />
                                     </a>
                                 </li>
                                 <li className='font-medium hover:text-primary'>
@@ -121,17 +113,12 @@ const Footer = () => {
                                         <FaTwitter className='size-6' />
                                     </a>
                                 </li>
-                                <li className='font-medium hover:text-primary'>
-                                    <a href='#'>
-                                        <FaTelegramPlane className='size-6' />
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
                     <Separator className='my-14' />
                     <p className='text-sm text-muted-foreground'>
-                        © 2024 Shadcnblocks. All rights reserved.
+                        © 2024 Gather. All rights reserved.
                     </p>
                 </footer>
             </div>

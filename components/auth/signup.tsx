@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Globe, UserRound } from 'lucide-react'
 
-const Signup = () => {
+const SignUp = () => {
     return (
         <section className='py-32'>
             <div className='container'>
@@ -77,4 +77,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default SignUp
