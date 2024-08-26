@@ -1,7 +1,7 @@
 import Features from "@/components/about/features";
 import Team from "@/components/about/team";
 import Testimonial from "@/components/about/testimonial";
-import Faq from "@/components/landing/faq";
+import Faq from "@/components/about/faq";
 
 export default function About() {
     return (

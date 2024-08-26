@@ -4,7 +4,7 @@ import Gallery from "@/components/landing/gallery";
 import Hero from "@/components/landing/hero";
 import Logos from "@/components/landing/logos";
 import Blog from "@/components/blog";
-import Faq from "@/components/landing/faq";
+import Faq from "@/components/about/faq";
 
 import { routes } from 'next-routes-list'
 
